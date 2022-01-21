@@ -1,0 +1,42 @@
+.popover {
+    min-height: calc(100vh - 20px);
+    background-color: #eebc5f;
+    width: calc(100vw - 20px);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    transition: 0.7s all ease-in-out;
+    overflow: hidden;
+}
+
+.popover-hide {
+    display: none;
+}
+
+.popover-hide-animation {
+    width: 0vw;
+}
+
+.popover-close-button {
+    position: absolute;
+    top: 10px;
+}
+
+.popover-close-button i {
+    font-size: 40px;
+    color: #303030;
+    position: absolute;
+}
+
+.popover-close-button:hover {
+    cursor: pointer;
+}
+
+.popover-title {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
