@@ -3,12 +3,14 @@
     background-color: #eebc5f;
     width: calc(100vw - 20px);
     padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1500;
     transition: 0.7s all ease-in-out;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 .popover-hide {
