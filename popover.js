@@ -12,6 +12,8 @@ function popover(section) {
     section.classList.add('popover-hide')
     section.classList.add('popover-hide-animation')
 
+    var title = section.getAttribute('title')
+
     var popButton = document.querySelectorAll('[popover="'+section.id+'"]');
     popButton[0].addEventListener("click", () => {
         section.classList.remove('popover-hide')
@@ -25,10 +27,10 @@ function popover(section) {
     closeButton.classList.add('popover-close-button')
     section.insertBefore(closeButton, section.children[0])
 
-    var title = document.createElement('h3')
-    title.innerHTML= 'My Title Popover'
-    title.classList.add('popover-title')
-    section.insertBefore(title, section.children[0])
+    var popTitle = document.createElement('h3')
+    popTitle.innerHTML= title
+    popTitle.classList.add('popover-title')
+    section.insertBefore(popTitle, section.children[0])
 
     closeButton.addEventListener('click', () => {
         section.classList.add('popover-hide-animation')
