@@ -2,6 +2,8 @@
 
 ### Simple javascript popover
 
+![image](https://user-images.githubusercontent.com/45208166/150647201-b961f594-f2ee-4770-8699-c23579b96531.png)
+
 ## How to use
 
 #### Include this css files in your index.html
@@ -16,12 +18,12 @@
 ```
 
 #### Exemple of popover code
-Create `<div>` element with `popover=` refer to the popover div id.
+Create `<div>` element with `popover=` who's refer to the popover's div id. Add `title` attribute to the popover's div to set title inside.
 ```html
 
 <button popover="1">Voir la popup</button>
 
-<div id="1" class="popover">
+<div id="1" class="popover" title="Popover title">
   <h2>Popover</h2>
 </div>
 ```
